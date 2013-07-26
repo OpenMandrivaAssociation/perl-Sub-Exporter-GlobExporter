@@ -1,15 +1,15 @@
 %define upstream_name    Sub-Exporter-GlobExporter
-%define upstream_version 0.002
+%define upstream_version 0.003
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.003
+Release:	1
 
 Summary:	Export shared globs with Sub::Exporter collectors
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Sub/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Sub/Sub-Exporter-GlobExporter-0.003.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Scalar::Util)
@@ -46,4 +46,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.0-1mdv2011.0
 + Revision: 601988
 - import perl-Sub-Exporter-GlobExporter
+
 
